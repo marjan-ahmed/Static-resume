@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Alata, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.left-side,
+.right-side {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-side {
+  background: #666666;
+  color: white;
+  margin-top: -10vh;
+  border: 2px solid black;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-img {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.9);
+  height: 150px;
+  width: 150px;
+}
+
+#profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-top: 20px;
+}
+
+#designation {
+  font-weight: 100;
+  color: #e9e9e9;
+  font-size: 1em;
+  text-align: left;
+}
+
+#divider {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.contact-details {
+    color: black;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.container {
+  background-color: rgb(201, 201, 201);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid white;
+  text-align: left;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+    background: #cccccc;
+    transform: translateY(-12px) scale(1.1);
+    box-shadow: inset 10px 5px rgba(0, 0, 0, 0.8); 
+}
+
+.right-side {
+  margin-top: 20px;
+  margin-right: 5vw;
+  background: #f1f1f1;
+}
+
+#edu-heading,
+.skills-heading,
+.exp-heading {
+  font-size: 2em;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.edu-info,
+.skill,
+.experience {
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: inline-block;
+  margin: 5px;
+  padding: 7px 10px;
+  background-color: rosybrown;
+  border-radius: 50px;
+  border: 2px solid green;
+  transition: 0.2s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-side,
+  .right-side {
+    width: 45%;
+    height: auto;
+  }
+
+  .right-side {
+    padding: 30px;
+  }
+}
